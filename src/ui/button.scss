@@ -1,0 +1,25 @@
+.btn {
+  background-color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    background-color: hsl(3, 77%, 44%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    outline: 2px solid hsl(3, 71%, 56%);
+    outline-offset: 2px;
+  }
+}
