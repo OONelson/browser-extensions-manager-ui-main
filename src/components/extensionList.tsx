@@ -1,3 +1,6 @@
+import { Switch } from "@heroui/switch";
+import { Card } from "@heroui/card";
+
 import { ExtensionCards } from "@/data";
 import Button from "@/ui/button";
 
@@ -6,7 +9,7 @@ const ExtensionList: React.FC = () => {
 
   return (
     <main className="h-full">
-      <section className="flex flex-col justify-center items-center py-6">
+      <section className="flex flex-col justify-center items-center py-6 lg:flex-row lg:justify-between">
         <h1 className="text-2xl text-[#091540] font-bold py-3">
           Extensions List
         </h1>
@@ -18,20 +21,35 @@ const ExtensionList: React.FC = () => {
         </ul>
       </section>
 
-      <section>
+      <section className="mt-4 lg:grid grid-cols-3 gap-3">
         {ExtensionCards.map((card, index) => (
-          <article key={index}>
-            <div>
-              <img alt="card-icon" src={`./assets/images/${card.logo}`} />
-              <div>
-                <h3>{card.name}</h3>
-                <p>{card.description}</p>
+          <Card
+            key={index}
+            className="p-4 mb-4 lg:my-0 rounded-3xl flex justify-between items-start w-full gap-y-5"
+          >
+            <div className="flex justify-between items-start gap-x-3">
+              <img
+                alt="card-icon"
+                className="w-[20%]"
+                src={`./assets/images/${card.logo}`}
+              />
+              <div className="flex justify-between items-start flex-col ">
+                <h3 className="text-[#091540] text-lg font-bold">
+                  {card.name}
+                </h3>
+                <p className=" text-gray-500 font-medium text-[13px]">
+                  {card.description}
+                </p>
               </div>
             </div>
-            <div>
-              <Button label="Remove" />
+            <div className="flex justify-between items-center w-full">
+              <Button
+                className="border border-solid border-gray-300 text-[#091540] font-medium"
+                label="Remove"
+              />
+              <Switch defaultSelected color="danger" size="sm" />
             </div>
-          </article>
+          </Card>
         ))}
       </section>
     </main>
