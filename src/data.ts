@@ -1,5 +1,14 @@
-export const ExtensionCards = [
+type ExtensionType = {
+  id: number;
+  name: string;
+  description: string;
+  logo: string;
+  isActive: boolean;
+};
+
+export const ExtensionCards: ExtensionType[] = [
   {
+    id: 1,
     logo: "logo-devlens.svg",
     name: "DevLens",
     description:
@@ -7,18 +16,21 @@ export const ExtensionCards = [
     isActive: true,
   },
   {
+    id: 2,
     logo: "logo-style-spy.svg",
     name: "StyleSpy",
     description: "Instantly analyze and copy CSS from any webpage element.",
     isActive: true,
   },
   {
+    id: 3,
     logo: "logo-speed-boost.svg",
     name: "SpeedBoost",
     description: "Optimizes browser resource usage to accelerate page loading.",
     isActive: false,
   },
   {
+    id: 4,
     logo: "logo-json-wizard.svg",
     name: "JSONWizard",
     description:
@@ -26,12 +38,14 @@ export const ExtensionCards = [
     isActive: true,
   },
   {
+    id: 5,
     logo: "logo-tab-master-pro.svg",
     name: "TabMaster Pro",
     description: "Organizes browser tabs into groups and sessions.",
     isActive: true,
   },
   {
+    id: 6,
     logo: "logo-viewport-buddy.svg",
     name: "ViewportBuddy",
     description:
@@ -39,6 +53,7 @@ export const ExtensionCards = [
     isActive: false,
   },
   {
+    id: 7,
     logo: "logo-markup-notes.svg",
     name: "Markup Notes",
     description:
@@ -46,6 +61,7 @@ export const ExtensionCards = [
     isActive: true,
   },
   {
+    id: 8,
     logo: "logo-grid-guides.svg",
     name: "GridGuides",
     description:
@@ -53,24 +69,28 @@ export const ExtensionCards = [
     isActive: false,
   },
   {
+    id: 9,
     logo: "logo-palette-picker.svg",
     name: "Palette Picker",
     description: "Instantly extracts color palettes from any webpage.",
     isActive: true,
   },
   {
+    id: 10,
     logo: "logo-link-checker.svg",
     name: "LinkChecker",
     description: "Scans and highlights broken links on any page.",
     isActive: true,
   },
   {
+    id: 11,
     logo: "logo-dom-snapshot.svg",
     name: "DOM Snapshot",
     description: "Capture and export DOM structures quickly.",
     isActive: false,
   },
   {
+    id: 12,
     logo: "logo-console-plus.svg",
     name: "ConsolePlus",
     description:

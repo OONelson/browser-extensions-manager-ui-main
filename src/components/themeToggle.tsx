@@ -5,7 +5,7 @@ export const ThemeToggle = () => {
 
   return (
     <div
-      className="bg-neutral-200 p-4 rounded-xl dark:bg-gray-600"
+      className="bg-neutral-200 hover:bg-neutral-300 p-4 rounded-xl dark:bg-gray-600"
       role="button"
       tabIndex={0}
       onClick={toggleTheme}
