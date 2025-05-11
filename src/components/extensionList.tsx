@@ -69,7 +69,7 @@ const ExtensionList: React.FC = () => {
               <img
                 alt="card-icon"
                 className="w-[20%]"
-                src={`./assets/images/${card.logo}`}
+                src={`./images/${card.logo}`}
               />
               <div className="flex justify-between items-start flex-col ">
                 <h3 className="text-[#091540] text-lg font-bold dark:text-white">

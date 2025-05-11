@@ -17,9 +17,9 @@ export const ThemeToggle = () => {
       }}
     >
       {!isDarkMode ? (
-        <img alt="icon-moon" src="/assets/images/icon-moon.svg" />
+        <img alt="icon-moon" src="./images/icon-moon.svg" />
       ) : (
-        <img alt="icon-sun" src="/assets/images/icon-sun.svg" />
+        <img alt="icon-sun" src="./images/icon-sun.svg" />
       )}
     </div>
   );
