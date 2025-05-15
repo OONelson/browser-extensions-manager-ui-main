@@ -1,5 +1,5 @@
-import Header from "../components/HeaderSection";
-import ExtensionList from "../components/ExtensionsList";
+import Header from "@/components/HeaderSection";
+import ExtensionList from "@/components/ExtensionsList";
 
 export default function IndexPage() {
   return (
